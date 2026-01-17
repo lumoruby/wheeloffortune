@@ -40,69 +40,6 @@ body::before {
   50% { opacity: 0.5; }
 }
 
-/* Carnival lights around the page */
-.lights-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.lights {
-  position: absolute;
-  display: flex;
-  gap: 30px;
-}
-
-.lights.top, .lights.bottom {
-  left: 0;
-  right: 0;
-  justify-content: center;
-}
-
-.lights.top {
-  top: 10px;
-}
-
-.lights.bottom {
-  bottom: 10px;
-}
-
-.lights.left, .lights.right {
-  flex-direction: column;
-  top: 50px;
-  bottom: 50px;
-  justify-content: space-around;
-}
-
-.lights.left {
-  left: 10px;
-}
-
-.lights.right {
-  right: 10px;
-}
-
-.lights::before {
-  content: '💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡';
-  font-size: 20px;
-  filter: drop-shadow(0 0 10px #ffeb3b);
-  animation: lightBlink 1s infinite alternate;
-}
-
-.lights.left::before, .lights.right::before {
-  writing-mode: vertical-lr;
-}
-
-@keyframes lightBlink {
-  0% { filter: drop-shadow(0 0 5px #ffeb3b); }
-  50% { filter: drop-shadow(0 0 20px #ff9800); }
-  100% { filter: drop-shadow(0 0 15px #ffeb3b); }
-}
-
 .container {
   position: relative;
   z-index: 2;
