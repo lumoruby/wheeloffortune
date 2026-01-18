@@ -52,7 +52,7 @@ body::before {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 180px 20px 20px 20px;
+  padding: 185px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,7 +106,7 @@ body::before {
 /* Main content layout */
 .main-content {
   display: flex;
-  gap: 8px;
+  gap: 13px;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -503,14 +503,14 @@ body::before {
 /* Responsive design */
 @media (max-width: 900px) {
   .container {
-    padding: 15px;
+    padding: 20px;
   }
 
   .main-content {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 8px;
+    gap: 13px;
   }
 
   .title {
@@ -551,11 +551,11 @@ body::before {
 
 @media (max-width: 500px) {
   .container {
-    padding: 10px;
+    padding: 15px;
   }
 
   .main-content {
-    gap: 8px;
+    gap: 13px;
   }
 
   .title {
