@@ -70,7 +70,7 @@ body::before {
     0 0 40px #ff00de,
     0 0 80px #ff00de,
     4px 4px 0 #ff6b00;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   animation: titleGlow 2s ease-in-out infinite;
 }
 
@@ -106,7 +106,7 @@ body::before {
 /* Main content layout */
 .main-content {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -510,13 +510,14 @@ body::before {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 10px;
+    gap: 15px;
   }
 
   .title {
     font-size: 2.5rem;
     width: 100%;
     text-align: center;
+    margin-bottom: 15px;
   }
 
   .wheel-section {
@@ -552,10 +553,15 @@ body::before {
     padding: 10px;
   }
 
+  .main-content {
+    gap: 15px;
+  }
+
   .title {
     font-size: 1.8rem;
     width: 100%;
     text-align: center;
+    margin-bottom: 15px;
   }
 
   .wheel-frame {
