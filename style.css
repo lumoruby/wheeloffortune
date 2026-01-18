@@ -106,7 +106,7 @@ body::before {
 /* Main content layout */
 .main-content {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -295,7 +295,7 @@ body::before {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .input-group label {
@@ -510,7 +510,7 @@ body::before {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 10px;
+    gap: 8px;
   }
 
   .title {
@@ -555,7 +555,7 @@ body::before {
   }
 
   .main-content {
-    gap: 10px;
+    gap: 8px;
   }
 
   .title {
