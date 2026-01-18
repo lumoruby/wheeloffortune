@@ -263,11 +263,13 @@ body::before {
   border: 3px solid;
   border-image: linear-gradient(145deg, #ff00de, #00ffff) 1;
   border-radius: 20px;
-  padding: 25px;
-  min-width: 320px;
+  padding: 20px;
+  min-width: 280px;
+  max-width: 350px;
   box-shadow:
     0 0 20px rgba(255, 0, 222, 0.3),
     inset 0 0 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
 .panel-header {
@@ -337,19 +339,23 @@ body::before {
 
 .segments-input {
   margin-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .segments-input label {
   display: block;
   color: #ffeb3b;
   margin-bottom: 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 #segment-inputs {
-  max-height: 300px;
+  max-height: 250px;
   overflow-y: auto;
+  overflow-x: hidden;
   padding-right: 5px;
+  width: 100%;
 }
 
 #segment-inputs::-webkit-scrollbar {
@@ -370,23 +376,26 @@ body::before {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  gap: 10px;
+  gap: 8px;
+  width: 100%;
 }
 
 .segment-input-row span {
   color: #00ffff;
-  font-size: 1rem;
-  min-width: 30px;
+  font-size: 0.9rem;
+  min-width: 25px;
+  flex-shrink: 0;
 }
 
 .segment-input-row input {
   flex: 1;
-  padding: 10px 12px;
+  min-width: 0;
+  padding: 8px 10px;
   border: 2px solid #00ffff;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-family: 'Jua', sans-serif;
 }
 
