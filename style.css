@@ -488,13 +488,25 @@ body::before {
 
 /* Responsive design */
 @media (max-width: 900px) {
+  .container {
+    padding: 15px;
+  }
+
   .main-content {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .title {
     font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .wheel-section {
+    width: 100%;
+    align-items: center;
   }
 
   .wheel-frame {
@@ -513,29 +525,88 @@ body::before {
   }
 
   .control-panel {
-    min-width: 280px;
+    width: 90%;
+    max-width: 350px;
+    min-width: auto;
+    padding: 20px;
   }
 }
 
 @media (max-width: 500px) {
+  .container {
+    padding: 10px;
+  }
+
   .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .wheel-frame {
+    padding: 15px;
   }
 
   #wheel {
-    width: 280px;
-    height: 280px;
+    width: 260px;
+    height: 260px;
   }
 
   .spin-btn {
-    width: 70px;
-    height: 70px;
-    font-size: 0.9rem;
+    width: 65px;
+    height: 65px;
+    font-size: 0.85rem;
   }
 
   .result {
+    font-size: 1.3rem;
+    padding: 12px 20px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .control-panel {
+    width: 95%;
+    max-width: 320px;
+    min-width: auto;
+    padding: 15px;
+  }
+
+  .panel-header {
     font-size: 1.5rem;
-    padding: 15px 25px;
+  }
+
+  .input-group label,
+  .segments-input label,
+  .preset-section label {
+    font-size: 1rem;
+  }
+
+  .input-group input {
+    width: calc(100% - 70px);
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .apply-btn {
+    width: 60px;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .segment-input-row input {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  .update-btn {
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+
+  .preset-btn {
+    padding: 10px;
+    font-size: 0.9rem;
   }
 }
 
