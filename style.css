@@ -106,7 +106,7 @@ body::before {
 /* Main content layout */
 .main-content {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -510,7 +510,7 @@ body::before {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 15px;
+    gap: 10px;
   }
 
   .title {
@@ -555,7 +555,7 @@ body::before {
   }
 
   .main-content {
-    gap: 15px;
+    gap: 10px;
   }
 
   .title {
