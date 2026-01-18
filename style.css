@@ -514,10 +514,11 @@ body::before {
   }
 
   .title {
-    font-size: 4.5rem;
+    font-size: 3rem;
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
+    white-space: nowrap;
   }
 
   .wheel-section {
@@ -558,10 +559,11 @@ body::before {
   }
 
   .title {
-    font-size: 3.3rem;
+    font-size: 2.2rem;
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
+    white-space: nowrap;
   }
 
   .wheel-frame {
