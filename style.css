@@ -527,3 +527,347 @@ body::before {
     padding: 15px 25px;
   }
 }
+
+/* ===== 콘텐츠 섹션 스타일 ===== */
+
+.info-section {
+  background: linear-gradient(145deg, rgba(45, 27, 78, 0.8), rgba(26, 5, 51, 0.8));
+  border: 2px solid rgba(255, 0, 222, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 80px;
+  color: #d8cce8;
+  text-align: center;
+}
+
+.info-section:first-of-type {
+  margin-top: 120px;
+}
+
+.info-section h2 {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 2rem;
+  color: #f0e0b0;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px rgba(240, 224, 176, 0.3);
+}
+
+.info-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d8cce8;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.info-section strong {
+  color: #b8e8e8;
+}
+
+/* 사용 방법 섹션 */
+.how-to-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(145deg, #ff00de, #cc00b1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 0, 222, 0.5);
+}
+
+.step-content h3 {
+  font-size: 1.3rem;
+  color: #e8d8a8;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.step-content p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: #d8cce8;
+  text-align: center;
+}
+
+/* 활용 예시 그리드 */
+.use-case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.use-case {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.use-case:hover {
+  transform: translateY(-5px);
+  border-color: #00ffff;
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+}
+
+.use-case-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.use-case h3 {
+  font-size: 1.2rem;
+  color: #e8d8a8;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.use-case p {
+  font-size: 0.95rem;
+  color: #d8cce8;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* FAQ 섹션 */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 0, 222, 0.2);
+}
+
+.faq-item summary {
+  padding: 18px 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #e0d4f0;
+  background: rgba(255, 0, 222, 0.1);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: #a8d4d4;
+  transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-item summary:hover {
+  background: rgba(255, 0, 222, 0.2);
+}
+
+.faq-item p {
+  padding: 20px;
+  margin: 0;
+  color: #d8cce8;
+  font-size: 1rem;
+  line-height: 1.7;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+/* 푸터 */
+.site-footer {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 2px solid rgba(255, 0, 222, 0.3);
+}
+
+.site-footer .footer-decoration {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: #c8b8e0;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #e0d4f0;
+  background: rgba(200, 184, 224, 0.15);
+}
+
+.copyright {
+  text-align: center;
+  color: #b0a0c8;
+  font-size: 0.9rem;
+}
+
+/* 서브페이지 공통 스타일 */
+.page-container {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de;
+  margin-bottom: 10px;
+}
+
+.page-header .back-link {
+  display: inline-block;
+  color: #00ffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 20px;
+  border: 2px solid #00ffff;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.page-header .back-link:hover {
+  background: #00ffff;
+  color: #1a0533;
+}
+
+.page-content {
+  background: linear-gradient(145deg, rgba(45, 27, 78, 0.9), rgba(26, 5, 51, 0.9));
+  border: 2px solid rgba(255, 0, 222, 0.3);
+  border-radius: 20px;
+  padding: 40px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.page-content h2 {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.page-content h2:first-child {
+  margin-top: 0;
+}
+
+.page-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.page-content ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.page-content li {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.page-content a {
+  color: #00ffff;
+}
+
+.last-updated {
+  text-align: right;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 반응형 - 콘텐츠 섹션 */
+@media (max-width: 768px) {
+  .info-section {
+    padding: 20px;
+    margin-top: 60px;
+  }
+
+  .info-section:first-of-type {
+    margin-top: 80px;
+  }
+
+  .info-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .use-case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-nav {
+    gap: 15px;
+  }
+
+  .page-content {
+    padding: 25px;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+}
