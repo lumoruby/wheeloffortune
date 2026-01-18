@@ -106,7 +106,7 @@ body::before {
 /* Main content layout */
 .main-content {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -302,7 +302,7 @@ body::before {
 }
 
 .input-group input {
-  width: calc(100% - 80px);
+  width: calc(100% - 90px);
   padding: 12px 15px;
   border: 2px solid #ff00de;
   border-radius: 10px;
@@ -328,7 +328,7 @@ body::before {
   font-family: 'Jua', sans-serif;
   font-size: 1rem;
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: 15px;
   transition: all 0.3s ease;
 }
 
